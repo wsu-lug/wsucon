@@ -7,11 +7,6 @@ var config = {
 	bowerDir: './bower_components'
 }
 
-gulp.task('default', function() {
-	// TODO: fill in the blanks
-});
-
-
 gulp.task('bower', function() {
 	return bower()
 		.pipe(gulp.dest(config.bowerDir))
@@ -39,3 +34,11 @@ gulp.task('css', function() { 
              }))) 
          .pipe(gulp.dest('./public/css')); 
 });
+
+
+gulp.task('watch', function() {
+	gulp.watch(config.sassPath + '/**/*.scss', ['css']));
+});
+
+
+gulp.task('default', ['bower', 'icons', 'css');
