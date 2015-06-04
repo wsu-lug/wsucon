@@ -1,0 +1,28 @@
+{
+  "name": "WSUCon",
+  "version": "3.0.0",
+  "homepage": "https://github.com/WSU-LUG/wsucon",
+  "description": "One badass LAN party",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "WSUCon",
+    "LAN",
+    "games",
+    "LUG",
+    "linux",
+    "WSU"
+  ],
+  "authors": [
+    "WSU-LUG"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
