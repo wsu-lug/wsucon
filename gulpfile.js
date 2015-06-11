@@ -1,11 +1,22 @@
 var gulp = require('gulp'),
-	sass = require('gulp-ruby-sass')
+	bower = require('gulp-bower')
+	concat = require('gulp-concat')
+	declare = require('gulp-declare')
+	handlebars = require('gulp-handlebars')
 	notify = require('gulp-notify')
-	bower = require('gulp-bower');
+	rename = require('gulp-rename')
+	sass = require('gulp-ruby-sass')
+	wrap = require('gulp-wrap');
 
 var config = {
-	sassPath: './source/sass',
+	sassDir: './source/sass',
+	binDir: './source/bin'
+	cssDir: './source/css'
+	fontAweDir: './source/font-awesome'
+	fontRegDir: './source/fonts'
+	jsDir: './source/js'
 	bowerDir: './bower_components'
+	templateDir: './source/templates'
 }
 
 gulp.task('bower', function() {
@@ -19,15 +30,15 @@ gulp.task('icons', function() {
 		.pipe(gulp.dest('./public/fonts'));
 });
 
-
+// TODO: rebuild for startbootstrap
 gulp.task('css', function() {
 	return gulp.src(config.sassPath + '/style.scss')
 		.pipe(sass({
 			style: 'compressed',
 			loadPath: [
-				'./source/sass',
-				config.bowerDir + '/bootstrap-sass/assets/stylesheets',
-				config.bowerDir + '/fontawesome/scss',
+				//'./source/sass',
+				//config.bowerDir + '/bootstrap-sass/assets/stylesheets',
+				//config.bowerDir + '/fontawesome/scss',
 			]
 		})
 			.on("error", notify.onError(function (error) {
@@ -35,6 +46,23 @@ gulp.task('css', function() {
 			})))
 		.pipe(gulp.dest('./public/css'));
 });
+
+// TODO: working on templating with handlebars
+// from : ./source/templates
+// include : ./source/pages
+// dest : ./public
+gulp.task('templates', function() {
+	gulp.src('config.templates' + '/*.hbs')
+		.pipe(handlebars())
+		.pipe(wrap('Handlebars.template(<%= contents %>)'))
+		.pipe(declare({
+			namespace: 'pages.templates',
+			noRedeclare: true,
+		}))
+		//.pipe(concat())
+		.pipe(gulp.rename('index.html'))
+		.pipe(gulp.dest('./public/'));
+})
 
 
 gulp.task('watch', function() {
