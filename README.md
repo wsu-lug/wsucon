@@ -1,5 +1,6 @@
 # WSUCon
-WSUCon Website
+
+Repository for the [WSUCon Website](http://wsucon.wsu.edu/).
 
 So far this is what the dev dependencies/setup looks like:
 1. git
