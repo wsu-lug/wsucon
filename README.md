@@ -1,7 +1,7 @@
 # WSUCon
-[ ![Codeship Status for WSU-LUG/wsucon](https://app.codeship.com/projects/15c60710-e52d-0132-b884-266c7b4e6c8b/status?branch=master)](https://app.codeship.com/projects/81971)
+[![Codeship Status for WSU-LUG/wsucon](https://app.codeship.com/projects/15c60710-e52d-0132-b884-266c7b4e6c8b/status?branch=master)](https://app.codeship.com/projects/81971)
 [![Code Climate](https://codeclimate.com/github/WSU-LUG/wsucon/badges/gpa.svg)](https://codeclimate.com/github/WSU-LUG/wsucon)
-[![Issue Count](https://codeclimate.com/github/WSU-LUG/wsucon/badges/issue_count.svg)](https://codeclimate.com/github/WSU-LUG/wsucon)[ ![Codeship Status for WSU-LUG/wsucon](https://app.codeship.com/projects/15c60710-e52d-0132-b884-266c7b4e6c8b/status?branch=master)](https://app.codeship.com/projects/81971)
+[![Issue Count](https://codeclimate.com/github/WSU-LUG/wsucon/badges/issue_count.svg)](https://codeclimate.com/github/WSU-LUG/wsucon)
 
 Repository for the [WSUCon Website](http://wsucon.wsu.edu/).
 
