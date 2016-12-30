@@ -5,6 +5,8 @@
 
 Repository for the [WSUCon Website](http://wsucon.wsu.edu/).
 
+## This will all be changed. Hold on to your hats.
+
 So far this is what the dev dependencies/setup looks like:
 1. git
 2. nodejs
