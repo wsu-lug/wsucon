@@ -1,3 +1,7 @@
+# Repo Specific
+photos
+
+# Bootstrap base
 .sass-cache
 bower_components
 node_modules
