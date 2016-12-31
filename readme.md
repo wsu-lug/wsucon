@@ -4,6 +4,19 @@
 [![Issue Count](https://codeclimate.com/github/WSU-LUG/wsucon/badges/issue_count.svg)](https://codeclimate.com/github/WSU-LUG/wsucon)
 
 Repository for the [WSUCon Website](http://wsucon.wsu.edu/).
+* [Bootstrap Base](https://github.com/BlackrockDigital/startbootstrap-modern-business)
+	- based on the MIT License
+* [Unstyled Bootstrap](https://startbootstrap.com/template-categories/unstyled/)
+
+## Breakdown of structure
+```
+/ # The repository. Congrats, you found it.
+|-- static # club files to edit (ie: not core bootstrap)
+|   |-- resources # Configuration files, something that has code or markup in it
+|   |-- assets # Images, video, other things that aren't code, markup, or configuration
+
+
+```
 
 # This will all be changed. Hold on to your hats.
 
