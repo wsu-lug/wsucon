@@ -18,7 +18,7 @@ body {
 .btn-default .registration-button {
     color: #333;
     background-color: #fff;
-    border-color: darkgreen;
+    border-color: mediumseagreen !important;
 }
 
 .img-portfolio {
