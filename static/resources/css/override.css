@@ -21,3 +21,19 @@ a.navbar-brand {
   text-indent: -9999px;
   width: 180px;
 }
+
+.schedule-table {
+  width: 100%;
+  border: 1px solid black;
+}
+
+.schedule-table td {
+  width: 50%;
+  border: 1px solid black;
+  padding: 5px;
+}
+.schedule-table th {
+  width: 50%;
+  border: 1px solid black;
+  padding: 5px;
+}
