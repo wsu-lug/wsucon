@@ -54,6 +54,22 @@ header.carousel .fill {
     font-size: 100px;
 }
 
+.schedule-table {
+    width: 100%;
+    border: 1px solid black;
+}
+
+.schedule-table td {
+    width: 50%;
+    border: 1px solid black;
+    padding: 5px;
+}
+.schedule-table th {
+    width: 50%;
+    border: 1px solid black;
+    padding: 5px;
+}
+
 /* Pricing Page Styles */
 
 .price {
