@@ -1,6 +1,6 @@
 #!/bin/bash
 # AUTHOR Charlie Hanacek
-# DESC This script updates the roman numerals text on the WSUCon website
+# DESC This script updates the roman numerals text on the WSUCon website. Doesn't work perfectly.
 # Additionally, it stages the changed files for a git commit
 for file in $(ls *.html) 
     do
