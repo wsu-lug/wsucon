@@ -33,6 +33,15 @@
     <!-- Override LUG CSS -->
     <link href="static/resources/css/override.css" rel="stylesheet" type="text/css">
 
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Important gallery script -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -43,7 +52,13 @@
 </head>
 
 <body>
-
+    <script>
+    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+                event.preventDefault();
+                $(this).ekkoLightbox();
+            });
+    
+    </script>
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
@@ -68,6 +83,9 @@
                     </li>
                     <li>
                         <a href="sponsors.html">Sponsors</a>
+                    </li>
+                    <li>
+                        <a href="pictures.html">Pictures</a>
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">More ... <b class="caret"></b></a>
@@ -116,7 +134,7 @@
                     <small></small>
                 </h1>
                 <ol class="breadcrumb">
-                    <li><a href="index.html">WSUCon</a>
+                    <a href="index.html">WSUCon</a>
                     </li>
                     <li class="active">Pictures</li>
                 </ol>
@@ -126,67 +144,64 @@
 
         <!-- Content Row -->
         <div class="row">
-            <div class="col-lg-12", onload="this.lightGallery();"> 
-                <ul>
-                    <li><a href="/static/assets/photos/xi/04.jpg" target="_blank"><img src="/static/assets/photos/xi_mini/04.jpg"></a></li>
-                    <li><a href="/static/assets/photos/xi/05.jpg" target="_blank"><img src="/static/assets/photos/xi_mini/05.jpg"></a></li>
-                    <li><a href="/static/assets/photos/xi/08.jpg" target="_blank"><img src="/static/assets/photos/xi_mini/08.jpg"></a></li>
-                    <li><a href="/static/assets/photos/xi/10.jpg" target="_blank"><img src="/static/assets/photos/xi_mini/10.jpg"></a></li>
-                    <li><a href="/static/assets/photos/xi/11.jpg" target="_blank"><img src="/static/assets/photos/xi_mini/11.jpg"></a></li>
-                    <li><a href="/static/assets/photos/xi/12.jpg" target="_blank"><img src="/static/assets/photos/xi_mini/12.jpg"></a></li>
-                    <li><a href="/static/assets/photos/xi/13.jpg" target="_blank"><img src="/static/assets/photos/xi_mini/13.jpg"></a></li>
-                    <li><a href="/static/assets/photos/xi/14.jpg" target="_blank"><img src="/static/assets/photos/xi_mini/14.jpg"></a></li>
-                    <li><a href="/static/assets/photos/xi/15.jpg" target="_blank"><img src="/static/assets/photos/xi_mini/15.jpg"></a></li>
-                    <li><a href="/static/assets/photos/xi/18.jpg" target="_blank"><img src="/static/assets/photos/xi_mini/18.jpg"></a></li>
-                    <li><a href="/static/assets/photos/xi/22.jpg" target="_blank"><img src="/static/assets/photos/xi_mini/22.jpg"></a></li>
-                    <li><a href="/static/assets/photos/xi/23.jpg" target="_blank"><img src="/static/assets/photos/xi_mini/23.jpg"></a></li>
-                    <li><a href="/static/assets/photos/xi/25.jpg" target="_blank"><img src="/static/assets/photos/xi_mini/25.jpg"></a></li>
-                    <li><a href="/static/assets/photos/xi/28.jpg" target="_blank"><img src="/static/assets/photos/xi_mini/28.jpg"></a></li>
-                    <li><a href="/static/assets/photos/xi/34.jpg" target="_blank"><img src="/static/assets/photos/xi_mini/34.jpg"></a></li>
-                    <li><a href="/static/assets/photos/xi/35.jpg" target="_blank"><img src="/static/assets/photos/xi_mini/35.jpg"></a></li>
-                    <li><a href="/static/assets/photos/xi/37.jpg" target="_blank"><img src="/static/assets/photos/xi_mini/37.jpg"></a></li>
-                    <li><a href="/static/assets/photos/xi/40.jpg" target="_blank"><img src="/static/assets/photos/xi_mini/40.jpg"></a></li>
-                    <li><a href="/static/assets/photos/xi/41.jpg" target="_blank"><img src="/static/assets/photos/xi_mini/41.jpg"></a></li>
-                    <li><a href="/static/assets/photos/xi/42.jpg" target="_blank"><img src="/static/assets/photos/xi_mini/42.jpg"></a></li>
-                    <li><a href="/static/assets/photos/xi/47.jpg" target="_blank"><img src="/static/assets/photos/xi_mini/47.jpg"></a></li>
-                    <li><a href="/static/assets/photos/xi/48.jpg" target="_blank"><img src="/static/assets/photos/xi_mini/48.jpg"></a></li>
-                    <li><a href="/static/assets/photos/xi/53.jpg" target="_blank"><img src="/static/assets/photos/xi_mini/53.jpg"></a></li>
-                    <li><a href="/static/assets/photos/xi/54.jpg" target="_blank"><img src="/static/assets/photos/xi_mini/54.jpg"></a></li>
-                    <li><a href="/static/assets/photos/xi/55.jpg" target="_blank"><img src="/static/assets/photos/xi_mini/55.jpg"></a></li>
-                    <li><a href="/static/assets/photos/xi/56.jpg" target="_blank"><img src="/static/assets/photos/xi_mini/56.jpg"></a></li>
-                    <li><a href="/static/assets/photos/xi/57.jpg" target="_blank"><img src="/static/assets/photos/xi_mini/57.jpg"></a></li>
-                    <li><a href="/static/assets/photos/xi/59.jpg" target="_blank"><img src="/static/assets/photos/xi_mini/59.jpg"></a></li>
-                    <li><a href="/static/assets/photos/xi/68.jpg" target="_blank"><img src="/static/assets/photos/xi_mini/68.jpg"></a></li>
-                    <li><a href="/static/assets/photos/xi/76.jpg" target="_blank"><img src="/static/assets/photos/xi_mini/76.jpg"></a></li>
-                    <li><a href="/static/assets/photos/xi/77.jpg" target="_blank"><img src="/static/assets/photos/xi_mini/77.jpg"></a></li>
-                    <li><a href="/static/assets/photos/xi/83.jpg" target="_blank"><img src="/static/assets/photos/xi_mini/83.jpg"></a></li>
-                    <li><a href="/static/assets/photos/xi/84.jpg" target="_blank"><img src="/static/assets/photos/xi_mini/84.jpg"></a></li>
-                    <li><a href="/static/assets/photos/xi/90.jpg" target="_blank"><img src="/static/assets/photos/xi_mini/90.jpg"></a></li>
-                    <li><a href="/static/assets/photos/xi/95.jpg" target="_blank"><img src="/static/assets/photos/xi_mini/95.jpg"></a></li>
-                    <li><a href="/static/assets/photos/xi/96.jpg" target="_blank"><img src="/static/assets/photos/xi_mini/96.jpg"></a></li>
-                    <li><a href="/static/assets/photos/xi/97.jpg" target="_blank"><img src="/static/assets/photos/xi_mini/97.jpg"></a></li>
-                    <li><a href="/static/assets/photos/xi/102.jpg" target="_blank"><img src="/static/assets/photos/xi_mini/102.jpg"></a></li>
-                    <li><a href="/static/assets/photos/xi/108.jpg" target="_blank"><img src="/static/assets/photos/xi_mini/108.jpg"></a></li>
-                    <li><a href="/static/assets/photos/xi/110.jpg" target="_blank"><img src="/static/assets/photos/xi_mini/110.jpg"></a></li>
-                    <li><a href="/static/assets/photos/xi/115.jpg" target="_blank"><img src="/static/assets/photos/xi_mini/115.jpg"></a></li>
-                    <li><a href="/static/assets/photos/xi/116.jpg" target="_blank"><img src="/static/assets/photos/xi_mini/116.jpg"></a></li>
-                    <li><a href="/static/assets/photos/xi/117.jpg" target="_blank"><img src="/static/assets/photos/xi_mini/117.jpg"></a></li>
-                    <li><a href="/static/assets/photos/xi/127.jpg" target="_blank"><img src="/static/assets/photos/xi_mini/127.jpg"></a></li>
-                    <li><a href="/static/assets/photos/xi/146.jpg" target="_blank"><img src="/static/assets/photos/xi_mini/146.jpg"></a></li>
-                    <li><a href="/static/assets/photos/xi/147.jpg" target="_blank"><img src="/static/assets/photos/xi_mini/147.jpg"></a></li>
-                    <li><a href="/static/assets/photos/xi/155.jpg" target="_blank"><img src="/static/assets/photos/xi_mini/155.jpg"></a></li>
-                    <li><a href="/static/assets/photos/xi/157.jpg" target="_blank"><img src="/static/assets/photos/xi_mini/157.jpg"></a></li>
-                    <li><a href="/static/assets/photos/xi/163.jpg" target="_blank"><img src="/static/assets/photos/xi_mini/163.jpg"></a></li>
-                    <li><a href="/static/assets/photos/xi/166.jpg" target="_blank"><img src="/static/assets/photos/xi_mini/166.jpg"></a></li>
-                    <li><a href="/static/assets/photos/xi/178.jpg" target="_blank"><img src="/static/assets/photos/xi_mini/178.jpg"></a></li>
-                    <li><a href="/static/assets/photos/xi/182.jpg" target="_blank"><img src="/static/assets/photos/xi_mini/182.jpg"></a></li>
-                    <li><a href="/static/assets/photos/xi/207.jpg" target="_blank"><img src="/static/assets/photos/xi_mini/207.jpg"></a></li>
-                    <li><a href="/static/assets/photos/xi/209.jpg" target="_blank"><img src="/static/assets/photos/xi_mini/209.jpg"></a></li>
-                    <li><a href="/static/assets/photos/xi/212.jpg" target="_blank"><img src="/static/assets/photos/xi_mini/212.jpg"></a></li>
-                    <li><a href="/static/assets/photos/xi/215.jpg" target="_blank"><img src="/static/assets/photos/xi_mini/215.jpg"></a></li>
-                    <li><a href="/static/assets/photos/xi/219.jpg" target="_blank"><img src="/static/assets/photos/xi_mini/219.jpg"></a></li>
-                    <li><a href="/static/assets/photos/xi/223.jpg" target="_blank"><img src="/static/assets/photos/xi_mini/223.jpg"></a></li>
-                </ul>
+            <div class="col-lg-12" > 
+                <a href="https://wsucon.wsu.edu/static/assets/photos/xi/04.jpg" data-toggle="lightbox"><img src="https://wsucon.wsu.edu/static/assets/photos/xi/xi-mini/04.jpg"></li>
+                <a href="https://wsucon.wsu.edu/static/assets/photos/xi/08.jpg" data-toggle="lightbox"><img src="https://wsucon.wsu.edu/static/assets/photos/xi/xi-mini/08.jpg"></li>
+                <a href="https://wsucon.wsu.edu/static/assets/photos/xi/10.jpg" data-toggle="lightbox"><img src="https://wsucon.wsu.edu/static/assets/photos/xi/xi-mini/10.jpg"></li>
+                <a href="https://wsucon.wsu.edu/static/assets/photos/xi/11.jpg" data-toggle="lightbox"><img src="https://wsucon.wsu.edu/static/assets/photos/xi/xi-mini/11.jpg"></li>
+                <a href="https://wsucon.wsu.edu/static/assets/photos/xi/12.jpg" data-toggle="lightbox"><img src="https://wsucon.wsu.edu/static/assets/photos/xi/xi-mini/12.jpg"></li>
+                <a href="https://wsucon.wsu.edu/static/assets/photos/xi/13.jpg" data-toggle="lightbox"><img src="https://wsucon.wsu.edu/static/assets/photos/xi/xi-mini/13.jpg"></li>
+                <a href="https://wsucon.wsu.edu/static/assets/photos/xi/14.jpg" data-toggle="lightbox"><img src="https://wsucon.wsu.edu/static/assets/photos/xi/xi-mini/14.jpg"></li>
+                <a href="https://wsucon.wsu.edu/static/assets/photos/xi/15.jpg" data-toggle="lightbox"><img src="https://wsucon.wsu.edu/static/assets/photos/xi/xi-mini/15.jpg"></li>
+                <a href="https://wsucon.wsu.edu/static/assets/photos/xi/18.jpg" data-toggle="lightbox"><img src="https://wsucon.wsu.edu/static/assets/photos/xi/xi-mini/18.jpg"></li>
+                <a href="https://wsucon.wsu.edu/static/assets/photos/xi/22.jpg" data-toggle="lightbox"><img src="https://wsucon.wsu.edu/static/assets/photos/xi/xi-mini/22.jpg"></li>
+                <a href="https://wsucon.wsu.edu/static/assets/photos/xi/23.jpg" data-toggle="lightbox"><img src="https://wsucon.wsu.edu/static/assets/photos/xi/xi-mini/23.jpg"></li>
+                <a href="https://wsucon.wsu.edu/static/assets/photos/xi/25.jpg" data-toggle="lightbox"><img src="https://wsucon.wsu.edu/static/assets/photos/xi/xi-mini/25.jpg"></li>
+                <a href="https://wsucon.wsu.edu/static/assets/photos/xi/28.jpg" data-toggle="lightbox"><img src="https://wsucon.wsu.edu/static/assets/photos/xi/xi-mini/28.jpg"></li>
+                <a href="https://wsucon.wsu.edu/static/assets/photos/xi/34.jpg" data-toggle="lightbox"><img src="https://wsucon.wsu.edu/static/assets/photos/xi/xi-mini/34.jpg"></li>
+                <a href="https://wsucon.wsu.edu/static/assets/photos/xi/35.jpg" data-toggle="lightbox"><img src="https://wsucon.wsu.edu/static/assets/photos/xi/xi-mini/35.jpg"></li>
+                <a href="https://wsucon.wsu.edu/static/assets/photos/xi/37.jpg" data-toggle="lightbox"><img src="https://wsucon.wsu.edu/static/assets/photos/xi/xi-mini/37.jpg"></li>
+                <a href="https://wsucon.wsu.edu/static/assets/photos/xi/40.jpg" data-toggle="lightbox"><img src="https://wsucon.wsu.edu/static/assets/photos/xi/xi-mini/40.jpg"></li>
+                <a href="https://wsucon.wsu.edu/static/assets/photos/xi/41.jpg" data-toggle="lightbox"><img src="https://wsucon.wsu.edu/static/assets/photos/xi/xi-mini/41.jpg"></li>
+                <a href="https://wsucon.wsu.edu/static/assets/photos/xi/42.jpg" data-toggle="lightbox"><img src="https://wsucon.wsu.edu/static/assets/photos/xi/xi-mini/42.jpg"></li>
+                <a href="https://wsucon.wsu.edu/static/assets/photos/xi/47.jpg" data-toggle="lightbox"><img src="https://wsucon.wsu.edu/static/assets/photos/xi/xi-mini/47.jpg"></li>
+                <a href="https://wsucon.wsu.edu/static/assets/photos/xi/48.jpg" data-toggle="lightbox"><img src="https://wsucon.wsu.edu/static/assets/photos/xi/xi-mini/48.jpg"></li>
+                <a href="https://wsucon.wsu.edu/static/assets/photos/xi/53.jpg" data-toggle="lightbox"><img src="https://wsucon.wsu.edu/static/assets/photos/xi/xi-mini/53.jpg"></li>
+                <a href="https://wsucon.wsu.edu/static/assets/photos/xi/54.jpg" data-toggle="lightbox"><img src="https://wsucon.wsu.edu/static/assets/photos/xi/xi-mini/54.jpg"></li>
+                <a href="https://wsucon.wsu.edu/static/assets/photos/xi/55.jpg" data-toggle="lightbox"><img src="https://wsucon.wsu.edu/static/assets/photos/xi/xi-mini/55.jpg"></li>
+                <a href="https://wsucon.wsu.edu/static/assets/photos/xi/56.jpg" data-toggle="lightbox"><img src="https://wsucon.wsu.edu/static/assets/photos/xi/xi-mini/56.jpg"></li>
+                <a href="https://wsucon.wsu.edu/static/assets/photos/xi/57.jpg" data-toggle="lightbox"><img src="https://wsucon.wsu.edu/static/assets/photos/xi/xi-mini/57.jpg"></li>
+                <a href="https://wsucon.wsu.edu/static/assets/photos/xi/59.jpg" data-toggle="lightbox"><img src="https://wsucon.wsu.edu/static/assets/photos/xi/xi-mini/59.jpg"></li>
+                <a href="https://wsucon.wsu.edu/static/assets/photos/xi/68.jpg" data-toggle="lightbox"><img src="https://wsucon.wsu.edu/static/assets/photos/xi/xi-mini/68.jpg"></li>
+                <a href="https://wsucon.wsu.edu/static/assets/photos/xi/76.jpg" data-toggle="lightbox"><img src="https://wsucon.wsu.edu/static/assets/photos/xi/xi-mini/76.jpg"></li>
+                <a href="https://wsucon.wsu.edu/static/assets/photos/xi/77.jpg" data-toggle="lightbox"><img src="https://wsucon.wsu.edu/static/assets/photos/xi/xi-mini/77.jpg"></li>
+                <a href="https://wsucon.wsu.edu/static/assets/photos/xi/83.jpg" data-toggle="lightbox"><img src="https://wsucon.wsu.edu/static/assets/photos/xi/xi-mini/83.jpg"></li>
+                <a href="https://wsucon.wsu.edu/static/assets/photos/xi/84.jpg" data-toggle="lightbox"><img src="https://wsucon.wsu.edu/static/assets/photos/xi/xi-mini/84.jpg"></li>
+                <a href="https://wsucon.wsu.edu/static/assets/photos/xi/90.jpg" data-toggle="lightbox"><img src="https://wsucon.wsu.edu/static/assets/photos/xi/xi-mini/90.jpg"></li>
+                <a href="https://wsucon.wsu.edu/static/assets/photos/xi/95.jpg" data-toggle="lightbox"><img src="https://wsucon.wsu.edu/static/assets/photos/xi/xi-mini/95.jpg"></li>
+                <a href="https://wsucon.wsu.edu/static/assets/photos/xi/96.jpg" data-toggle="lightbox"><img src="https://wsucon.wsu.edu/static/assets/photos/xi/xi-mini/96.jpg"></li>
+                <a href="https://wsucon.wsu.edu/static/assets/photos/xi/97.jpg" data-toggle="lightbox"><img src="https://wsucon.wsu.edu/static/assets/photos/xi/xi-mini/97.jpg"></li>
+                <a href="https://wsucon.wsu.edu/static/assets/photos/xi/102.jpg" data-toggle="lightbox"><img src="https://wsucon.wsu.edu/static/assets/photos/xi/xi-mini/102.jpg"></li>
+                <a href="https://wsucon.wsu.edu/static/assets/photos/xi/108.jpg" data-toggle="lightbox"><img src="https://wsucon.wsu.edu/static/assets/photos/xi/xi-mini/108.jpg"></li>
+                <a href="https://wsucon.wsu.edu/static/assets/photos/xi/110.jpg" data-toggle="lightbox"><img src="https://wsucon.wsu.edu/static/assets/photos/xi/xi-mini/110.jpg"></li>
+                <a href="https://wsucon.wsu.edu/static/assets/photos/xi/115.jpg" data-toggle="lightbox"><img src="https://wsucon.wsu.edu/static/assets/photos/xi/xi-mini/115.jpg"></li>
+                <a href="https://wsucon.wsu.edu/static/assets/photos/xi/116.jpg" data-toggle="lightbox"><img src="https://wsucon.wsu.edu/static/assets/photos/xi/xi-mini/116.jpg"></li>
+                <a href="https://wsucon.wsu.edu/static/assets/photos/xi/117.jpg" data-toggle="lightbox"><img src="https://wsucon.wsu.edu/static/assets/photos/xi/xi-mini/117.jpg"></li>
+                <a href="https://wsucon.wsu.edu/static/assets/photos/xi/127.jpg" data-toggle="lightbox"><img src="https://wsucon.wsu.edu/static/assets/photos/xi/xi-mini/127.jpg"></li>
+                <a href="https://wsucon.wsu.edu/static/assets/photos/xi/146.jpg" data-toggle="lightbox"><img src="https://wsucon.wsu.edu/static/assets/photos/xi/xi-mini/146.jpg"></li>
+                <a href="https://wsucon.wsu.edu/static/assets/photos/xi/147.jpg" data-toggle="lightbox"><img src="https://wsucon.wsu.edu/static/assets/photos/xi/xi-mini/147.jpg"></li>
+                <a href="https://wsucon.wsu.edu/static/assets/photos/xi/155.jpg" data-toggle="lightbox"><img src="https://wsucon.wsu.edu/static/assets/photos/xi/xi-mini/155.jpg"></li>
+                <a href="https://wsucon.wsu.edu/static/assets/photos/xi/157.jpg" data-toggle="lightbox"><img src="https://wsucon.wsu.edu/static/assets/photos/xi/xi-mini/157.jpg"></li>
+                <a href="https://wsucon.wsu.edu/static/assets/photos/xi/163.jpg" data-toggle="lightbox"><img src="https://wsucon.wsu.edu/static/assets/photos/xi/xi-mini/163.jpg"></li>
+                <a href="https://wsucon.wsu.edu/static/assets/photos/xi/166.jpg" data-toggle="lightbox"><img src="https://wsucon.wsu.edu/static/assets/photos/xi/xi-mini/166.jpg"></li>
+                <a href="https://wsucon.wsu.edu/static/assets/photos/xi/178.jpg" data-toggle="lightbox"><img src="https://wsucon.wsu.edu/static/assets/photos/xi/xi-mini/178.jpg"></li>
+                <a href="https://wsucon.wsu.edu/static/assets/photos/xi/182.jpg" data-toggle="lightbox"><img src="https://wsucon.wsu.edu/static/assets/photos/xi/xi-mini/182.jpg"></li>
+                <a href="https://wsucon.wsu.edu/static/assets/photos/xi/207.jpg" data-toggle="lightbox"><img src="https://wsucon.wsu.edu/static/assets/photos/xi/xi-mini/207.jpg"></li>
+                <a href="https://wsucon.wsu.edu/static/assets/photos/xi/209.jpg" data-toggle="lightbox"><img src="https://wsucon.wsu.edu/static/assets/photos/xi/xi-mini/209.jpg"></li>
+                <a href="https://wsucon.wsu.edu/static/assets/photos/xi/212.jpg" data-toggle="lightbox"><img src="https://wsucon.wsu.edu/static/assets/photos/xi/xi-mini/212.jpg"></li>
+                <a href="https://wsucon.wsu.edu/static/assets/photos/xi/215.jpg" data-toggle="lightbox"><img src="https://wsucon.wsu.edu/static/assets/photos/xi/xi-mini/215.jpg"></li>
+                <a href="https://wsucon.wsu.edu/static/assets/photos/xi/219.jpg" data-toggle="lightbox"><img src="https://wsucon.wsu.edu/static/assets/photos/xi/xi-mini/219.jpg"></li>
+                <a href="https://wsucon.wsu.edu/static/assets/photos/xi/223.jpg" data-toggle="lightbox"><img src="https://wsucon.wsu.edu/static/assets/photos/xi/xi-mini/223.jpg"></li>
             </div>
         </div>
         <!-- /.row -->
@@ -205,14 +220,8 @@
     </div>
     <!-- /.container -->
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Important gallery script -->
-    <script src="https://cdn.jsdelivr.net/npm/lightgallery.js@1.1.2/lib/js/lightgallery.min.js"></script>
+    
 
 </body>
 

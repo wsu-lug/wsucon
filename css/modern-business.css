@@ -6,6 +6,15 @@
 
 /* Global Styles */
 
+#image-gallery .modal-footer{
+    display: block;
+  }
+  
+.btn:focus, .btn:active, button:focus, button:active {
+    outline: none !important;
+    box-shadow: none !important;
+}  
+
 html,
 body {
     height: 100%;
