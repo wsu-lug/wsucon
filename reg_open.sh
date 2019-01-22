@@ -6,7 +6,7 @@ for file in $(ls *.html)
     do
     echo "Processing " $file
     sed -i.bak -e s/'is CLOSED'/'is OPEN'/g $file
-    sed -i.bak -e s/'background-color: red'/'background-color: green'/g $file
+    sed -i.bak -e s/'background-color: red'/'background-color: green; color: white'/g $file
     git add $file
 done;
 rm *.html.bak
