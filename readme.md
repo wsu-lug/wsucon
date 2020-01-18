@@ -27,6 +27,28 @@ Repository for the [WSUCon Website](http://wsucon.wsu.edu/).
 - quick to top scrolling button
 
 
+## Minor TODOs
+
+- Update logo with new design for 2020 (45 mins)
+- Update 404.html 
+- Remove brackets.md
+- Create new eventbrite event (20 minutes)
+- confirm contact information for contact.md with bobby
+- update Dockerfile to reflect WSUCon site
+- Add 404.html to nginx config
+- Update and template FAQs using jekyll front matter
+- make sure nginx docker loads images directory with bind mount
+- Update games-tournaments.html to be in Jekyll. Should include tournament schedule
+- Decide on food (email bobby)
+- Call about food (After email response from bobby, by Monday)
+- Create Cougsync Event
+- Call Neil Manning about WSUCon event setup
+- Put together volunteer meeting/runthrough
+- Contact RHA about getting funding for switches
+- Update sponsors page with ASWSU
+- Update winterwonderlan.html with default template
+- Update wsucraft.html with default template 
+
 # Future Plans
 
 Dependencies for future builds include looking into:

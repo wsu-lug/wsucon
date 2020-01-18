@@ -5,7 +5,7 @@
 for file in $(ls *.html) 
     do
     echo "Processing " $file
-    sed -i.bak -e s/'XVI'/'XVII'/g $file
+    sed -i.bak -e s/'XVII'/'2020'/g $file
     git add $file
 done;
 rm *.html.bak

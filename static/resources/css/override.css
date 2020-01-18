@@ -6,6 +6,8 @@ body {
   background-color: #222;
 }
 
+
+
 /*
 a.navbar-brand {
   background-image: url('../../../static/assets/logos/wsucon-light.svg');
@@ -17,9 +19,10 @@ a.navbar-brand {
   background-image: url('../../../static/assets/logos/wsucon-light.svg');
   background-repeat: no-repeat;
   display: block;
-  margin: .4em auto 0 1em;
-  text-indent: -9999px;
-  width: 180px;
+  width: 300px;
+  margin: auto;
+  margin-top: 5px;
+  background-size: contain;
 }
 
 .schedule-table {
@@ -37,5 +40,21 @@ a.navbar-brand {
   border: 1px solid black;
   padding: 5px;
 }
+.registration-button {
+  white-space: normal;
+}
 
-
+@media (min-width: 1px) and (max-width: 1200px) {
+  .navbar-collapse.collapse {
+      display: none !important;
+  }
+  .navbar-collapse.collapse.in {
+      display: block !important;
+  }
+  .navbar-header .collapse, .navbar-toggle {
+      display:block !important;
+  }
+  .navbar-header {
+      float:none;
+  }
+}
